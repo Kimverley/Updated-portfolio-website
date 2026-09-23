@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kimverley Herrera — Front-End Dev</title>
+    <meta name="description" content="Kimverley Herrera is a 16-year-old West-MEC coding student in Phoenix, AZ building front-end projects with HTML, CSS, and JavaScript.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav">
+            <div class="logo">kimverley</div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <span class="eyebrow-tag"><span class="dot"></span>Open to internships</span>
+            <h1>Bring thoughts to life <em>through code</em></h1>
+            <p class="lede">Hi, I'm Kimverley — a 16-year-old West-MEC coding student in Phoenix, AZ, building things with HTML, CSS, and JavaScript, one project at a time.</p>
+            <div class="hero-buttons">
+                <a href="project.html" class="btn btn-solid">View my work</a>
+                <a href="#contact" class="btn btn-line">Let's talk</a>
+            </div>
+        </div>
+
+        <div class="editor-window">
+            <div class="editor-topbar">
+                <div class="editor-dots"><span></span><span></span><span></span></div>
+                <span class="editor-filename">about-me.js</span>
+            </div>
+            <div class="editor-body" id="heroCode"></div>
+        </div>
+    </section>
+
+    <div class="ticker-wrap" aria-hidden="true">
+        <div class="ticker">
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span>
+            <span>CSS Grid & Flexbox</span><span>DOM Manipulation</span><span>Git & GitHub</span>
+            <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>Responsive Design</span>
+            <span>CSS Grid & Flexbox</span><span>DOM Manipulation</span><span>Git & GitHub</span>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about" class="about">
+        <div class="section-head">
+            <span class="eyebrow-tag"><span class="dot"></span>About</span>
+            <h2>Student by day, builder by night</h2>
+        </div>
+        <div class="about-card">
+            <img src="image/profile.png" alt="Kimverley Herrera">
+            <div class="about-copy">
+                <p>I'm a <strong>West-MEC coding student</strong> in Glendale, AZ, working toward becoming a front-end developer and I'm doing it early. Every project on this site is something I built to actually learn the concept, not just to check a box.</p>
+                <p>When I'm not writing code, I'm usually <strong>painting for commisions</strong>. I like that both are about taking something blank and giving it structure and color.</p>
+                <div class="about-badges">
+                    <span class="badge">Age 17</span>
+                    <span class="badge">Phoenix, AZ</span>
+                    <span class="badge">HTML · CSS · JS</span>
+                    <span class="badge">Class of 2027</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="work-section">
+        <div class="work-head">
+            <div class="section-head" style="margin-bottom:0;">
+                <span class="eyebrow-tag"><span class="dot"></span>Selected work</span>
+                <h2>Highlighted projects</h2>
+            </div>
+        </div>
+        <div class="highlighted-card" id="featuredGrid"></div>
+        <div class="proj-btn-wrap">
+            <a href="project.html" class="proj-btn">View all 28 projects →</a>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+        <div class="hire-banner">
+            <div class="hire-copy">
+                <h2>Think I'd be a good fit?</h2>
+                <p>I'm actively looking for an internship or entry-level opportunity to keep learning alongside a real team. One click below sends me a message directly.</p>
+            </div>
+            <div class="hire-action">
+                <button id="hireBtn" class="btn btn-citrus">Yes, let's talk</button>
+                <span id="hireResponse" class="hire-response"></span>
+            </div>
+        </div>
+
+        <h2 class="section-title">Get in touch</h2>
+        <div class="map-container">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3325.6709253397553!2d-112.29541422511411!3d33.5359404733558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b4104080e38d9%3A0x1fbd2919e78fa444!2sWest-MEC%20-%20Central%20Campus!5e0!3m2!1sen!2sus!4v1765909994743!5m2!1sen!2sus"
+            width="100%"
+            height="300"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+
+        <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+            <button class="btn btn-solid" type="submit">Send message</button>
+        </form>
+
+        <div class="contact-bottom">
+            <div class="contact-info">
+                <p><strong>Address:</strong> Phoenix, Arizona</p>
+                <p><strong>Email:</strong> <a href="mailto:kimverleyherrera73@gmail.com">kimverleyherrera73@gmail.com</a></p>
+                <p><strong>Phone:</strong> +1 (480) 220-8917</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/Kimverley" target="_blank" rel="noopener">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2026 Kimverley Herrera Mejia. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
